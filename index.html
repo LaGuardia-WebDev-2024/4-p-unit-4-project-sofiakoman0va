@@ -23,7 +23,9 @@ Select ONE Additional Feature to Add
    table, th, td {
             border: 1px solid;
             border-color: #c1b54e;
-            background-color: rgb(217, 241, 254); }
+            background-color: rgb(217, 241, 254);
+            width: 500px; 
+          }
 
     body {
       background-image: url("https://i.pinimg.com/1200x/fb/01/12/fb01129b2da352cec4d3d058ea9ec565.jpg");
@@ -31,17 +33,47 @@ Select ONE Additional Feature to Add
       background-blend-mode: overlay;
     }
 
-    h1, h3 {
-      background-color: aliceblue;
-      color:#3e87e6
+    h1 {
+      background-color:  rgb(217, 241, 254);
+      color:#3e87e6 ;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h3 {
+      background-color: rgb(92, 146, 180);
+      color:rgb(217, 241, 254)
+    }
+
+    #big-bol {
+      font-family: "Sixtyfour", sans-serif;
+      font-size: 1.5em
     }
 
     #bol {
-      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+      font-family: "Sixtyfour", sans-serif;
+      font-size: 11px ;
+    }
+
+    #big-jcch {
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 2em
     }
 
     #jcch {
-      
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    #big-coraline {
+      font-family: "Indie Flower", cursive;
+      font-size: 2em
+    }
+
+    #coraline {
+      font-family: "Indie Flower", cursive;
+    }
+
+    #list {
+      background-color:  rgb(217, 241, 254);
     }
 
   </style>
@@ -49,37 +81,50 @@ Select ONE Additional Feature to Add
 <body>
 
   <h1>My Top Three Animated Movies</h1>
+
+  <p>
+    <ul id="list">
+      <li>The Book of Life</li>
+      <li>Jack and the Cuckoo-Clock Heart</li>
+      <li>Coraline</li>
+    </ul>
+  </p>
   
-  <h3>The Book of Life</h3>
+  <h3 id="big-bol">The Book of Life</h3>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap" rel="stylesheet"> 
+
   <hr>
   <img src="https://m.media-amazon.com/images/M/MV5BNTM5MzE5MDA1Nl5BMl5BanBnXkFtZTgwOTA0MDA5MTE@._V1_.jpg" width="200">
 
-  <table>
+  <table id="bol">
     <thead>
       <tr>
         <th>Synopsis</th>
       </tr>
     </thead>
-    <tbody id="bol">
+    <tbody>
       <tr>
-        <th>In the Mexican town of San Angel, Manolo (Diego Luna), Maria (Zoë Saldana) and Joaquin (Channing Tatum) have been friends ever since childhood. Although their lives have taken different paths -- Maria was sent to Europe, Joaquin joined the military, and Manolo studied to become a bullfighter -- one thing remains the same: Manolo and Joaquin both want to marry Maria. Little does the trio know that battling husband-and-wife deities have made a high-stakes wager on the love triangle's outcome.</th>
+        <th>In the Mexican town of San Angel, Manolo (Diego Luna), Maria (Zoë Saldana) and Joaquin (Channing Tatum) have been friends ever since childhood. Although their lives have taken different paths — Maria was sent to Europe, Joaquin joined the military, and Manolo studied to become a bullfighter — one thing remains the same: Manolo and Joaquin both want to marry Maria. Little does the trio know that battling husband-and-wife deities have made a high-stakes wager on the love triangle's outcome.</th>
       </tr>
     </tbody>
   </table>
   <br>
 
-  <h3>Jack and the Cuckoo-Clock Heart</h3>
+  <h3 id="big-jcch">Jack and the Cuckoo-Clock Heart</h3>
   <hr>
   <img src="https://m.media-amazon.com/images/M/MV5BZjIxNjUxMWEtMjI3MC00YjlkLWE0OGQtMGJlZDRmNjZiYjg4XkEyXkFqcGc@._V1_.jpg" width="200">
 
-  <table>
+  <table id="jcch">
     <thead>
       <tr>
         <th>Synposis
         </th>
       </tr>
     </thead>
-    <tbody id="jcch">
+    <tbody>
       <tr>
         <th>A boy born with a cuckoo-clock for a heart ignores doesn't heed warnings that he must never fall in love. He tries his best to avoid emotion but finds his feelings hard to contain when he meets a girl in town and becomes infatuated with her.
         </th>
@@ -88,18 +133,23 @@ Select ONE Additional Feature to Add
   </table>
   <br>
 
-  <h3>Coraline</h3>
+  <h3 id="big-coraline">Coraline</h3>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Sixtyfour&display=swap" rel="stylesheet">
+
   <hr>
   <img src="https://i0.wp.com/geekytalksite.wordpress.com/wp-content/uploads/2017/03/coraline.jpeg?fit=842%2C1200&ssl=1&w=640" width="200">
   
-  <table>
+  <table id="coraline">
     <thead>
       <tr>
         <th>Synopsis</th>
       </tr>
     </thead>
 
-    <tbody id="coraline">
+    <tbody>
       <tr>
         <th>While exploring her new home, a girl named Coraline (Dakota Fanning) discovers a secret door, behind which lies an alternate world that closely mirrors her own but, in many ways, is better. She rejoices in her discovery, until Other Mother (Teri Hatcher) and the rest of her parallel family try to keep her there forever. Coraline must use all her resources and bravery to make it back to her own family and life.</th>
       </tr>
